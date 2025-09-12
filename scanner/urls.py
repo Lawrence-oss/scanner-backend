@@ -16,13 +16,16 @@ Including another URLconf
 """
 from django.urls import path
 from rest_framework_simplejwt.views import TokenRefreshView
-from api.views import ScanView
+from api.views import ScanView, SimpleCaptchaView
 from api.auth_views import register, login, profile, logout
 
 urlpatterns = [
     # Scan endpoints
     path('api/scan/', ScanView.as_view(), name='scan_create'),
     path('api/scan/<str:scan_id>/', ScanView.as_view(), name='scan_detail'),
+    
+    # Captcha endpoint
+    path('api/captcha/', SimpleCaptchaView.as_view(), name='captcha'),
     
     # Auth endpoints
     path('api/auth/register/', register, name='register'),

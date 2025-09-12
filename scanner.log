@@ -1,0 +1,602 @@
+INFO 2025-09-12 11:17:35,926 autoreload 16032 14940 Watching for file changes with StatReloader
+INFO 2025-09-12 11:17:35,926 autoreload 16032 14940 Watching for file changes with StatReloader
+INFO 2025-09-12 11:19:40,965 basehttp 16032 18804 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:19:40,965 basehttp 16032 18804 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2025-09-12 11:19:43,438 log 16032 18804 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 11:19:43,438 log 16032 18804 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 11:19:43,440 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 401 37
+WARNING 2025-09-12 11:19:43,440 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 401 37
+WARNING 2025-09-12 11:19:59,561 log 16032 18804 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 11:19:59,561 log 16032 18804 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 11:19:59,565 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 401 37
+WARNING 2025-09-12 11:19:59,565 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 401 37
+INFO 2025-09-12 11:20:31,970 basehttp 16032 18804 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:20:31,970 basehttp 16032 18804 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:20:34,463 basehttp 16032 18804 "POST /api/auth/register/ HTTP/1.1" 201 98
+INFO 2025-09-12 11:20:34,463 basehttp 16032 18804 "POST /api/auth/register/ HTTP/1.1" 201 98
+INFO 2025-09-12 11:20:49,751 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 11:20:49,751 basehttp 16032 18804 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 11:20:58,898 basehttp 16032 18804 "OPTIONS /api/scan/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:20:58,898 basehttp 16032 18804 "OPTIONS /api/scan/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:20:58,911 views 16032 18804 Received POST request to /api/scan/
+INFO 2025-09-12 11:20:58,911 views 16032 18804 Received POST request to /api/scan/
+INFO 2025-09-12 11:20:58,912 views 16032 18804 URL: https://scanme.nmap.org
+INFO 2025-09-12 11:20:58,912 views 16032 18804 URL: https://scanme.nmap.org
+INFO 2025-09-12 11:20:58,934 views 16032 18804 Created scan with ID: 1757672458917
+INFO 2025-09-12 11:20:58,934 views 16032 18804 Created scan with ID: 1757672458917
+INFO 2025-09-12 11:20:58,938 views 16032 7288 Starting background scan for https://scanme.nmap.org
+INFO 2025-09-12 11:20:58,938 views 16032 7288 Starting background scan for https://scanme.nmap.org
+INFO 2025-09-12 11:20:58,968 views 16032 7288 Starting nmap scan for https://scanme.nmap.org
+INFO 2025-09-12 11:20:58,968 views 16032 7288 Starting nmap scan for https://scanme.nmap.org
+INFO 2025-09-12 11:20:59,004 basehttp 16032 18804 "POST /api/scan/ HTTP/1.1" 201 253
+INFO 2025-09-12 11:20:59,004 basehttp 16032 18804 "POST /api/scan/ HTTP/1.1" 201 253
+INFO 2025-09-12 11:21:01,031 basehttp 16032 18804 "OPTIONS /api/scan/1757672458917/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:21:01,031 basehttp 16032 18804 "OPTIONS /api/scan/1757672458917/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:21:01,044 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:01,044 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:01,049 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:01,049 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:01,086 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:01,086 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:03,021 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:03,021 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:03,023 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:03,023 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:03,042 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:03,042 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:05,030 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:05,030 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:05,037 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:05,037 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 10
+INFO 2025-09-12 11:21:05,099 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:05,099 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:21:05,967 views 16032 7288 Found open port 22 on 45.33.32.156
+INFO 2025-09-12 11:21:05,967 views 16032 7288 Found open port 22 on 45.33.32.156
+INFO 2025-09-12 11:21:05,992 views 16032 7288 Found open port 80 on 45.33.32.156
+INFO 2025-09-12 11:21:05,992 views 16032 7288 Found open port 80 on 45.33.32.156
+INFO 2025-09-12 11:21:06,037 views 16032 7288 Starting website analysis for https://scanme.nmap.org
+INFO 2025-09-12 11:21:06,037 views 16032 7288 Starting website analysis for https://scanme.nmap.org
+INFO 2025-09-12 11:21:07,032 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:07,032 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:07,035 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 30
+INFO 2025-09-12 11:21:07,035 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 30
+INFO 2025-09-12 11:21:07,058 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 777
+INFO 2025-09-12 11:21:07,058 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 777
+INFO 2025-09-12 11:21:09,036 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:09,036 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:09,041 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 30
+INFO 2025-09-12 11:21:09,041 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 30
+INFO 2025-09-12 11:21:09,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 777
+INFO 2025-09-12 11:21:09,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 777
+WARNING 2025-09-12 11:21:09,706 views 16032 7288 Website analysis failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002327FBC9940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+WARNING 2025-09-12 11:21:09,706 views 16032 7288 Website analysis failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002327FBC9940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO 2025-09-12 11:21:09,746 views 16032 7288 Starting SQL injection testing for https://scanme.nmap.org
+INFO 2025-09-12 11:21:09,746 views 16032 7288 Starting SQL injection testing for https://scanme.nmap.org
+INFO 2025-09-12 11:21:11,025 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:11,025 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:11,029 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:11,029 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:11,061 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:11,061 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:13,033 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:13,033 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:13,036 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:13,036 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:13,059 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:13,059 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:15,027 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:15,027 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:15,033 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:15,033 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:15,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:15,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:17,037 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:17,037 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:17,042 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:17,042 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 50
+INFO 2025-09-12 11:21:17,079 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:17,079 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+WARNING 2025-09-12 11:21:18,892 views 16032 7288 SQL injection testing failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002327FB982D0>, 'Connection to scanme.nmap.org timed out. (connect timeout=10)'))
+WARNING 2025-09-12 11:21:18,892 views 16032 7288 SQL injection testing failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002327FB982D0>, 'Connection to scanme.nmap.org timed out. (connect timeout=10)'))
+INFO 2025-09-12 11:21:18,910 views 16032 7288 Starting XSS testing for https://scanme.nmap.org
+INFO 2025-09-12 11:21:18,910 views 16032 7288 Starting XSS testing for https://scanme.nmap.org
+INFO 2025-09-12 11:21:19,033 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:19,033 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:19,038 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 70
+INFO 2025-09-12 11:21:19,038 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 70
+INFO 2025-09-12 11:21:19,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:19,075 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:21,030 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:21,030 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:21,035 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 70
+INFO 2025-09-12 11:21:21,035 views 16032 18804 Found scan 1757672458917, status: scanning, progress: 70
+INFO 2025-09-12 11:21:21,082 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+INFO 2025-09-12 11:21:21,082 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1304
+WARNING 2025-09-12 11:21:22,504 views 16032 7288 XSS testing failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002327FB99950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+WARNING 2025-09-12 11:21:22,504 views 16032 7288 XSS testing failed for https://scanme.nmap.org: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002327FB99950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO 2025-09-12 11:21:22,530 views 16032 7288 Scan 1757672458917 completed successfully
+INFO 2025-09-12 11:21:22,530 views 16032 7288 Scan 1757672458917 completed successfully
+INFO 2025-09-12 11:21:23,023 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:23,023 views 16032 18804 Received GET request for scan ID: 1757672458917
+INFO 2025-09-12 11:21:23,026 views 16032 18804 Found scan 1757672458917, status: completed, progress: 100
+INFO 2025-09-12 11:21:23,026 views 16032 18804 Found scan 1757672458917, status: completed, progress: 100
+INFO 2025-09-12 11:21:23,045 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1306
+INFO 2025-09-12 11:21:23,045 basehttp 16032 18804 "GET /api/scan/1757672458917/ HTTP/1.1" 200 1306
+INFO 2025-09-12 11:22:10,233 views 16032 18804 Received POST request to /api/scan/
+INFO 2025-09-12 11:22:10,233 views 16032 18804 Received POST request to /api/scan/
+INFO 2025-09-12 11:22:10,236 views 16032 18804 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,236 views 16032 18804 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,255 views 16032 18804 Created scan with ID: 1757672530237
+INFO 2025-09-12 11:22:10,255 views 16032 18804 Created scan with ID: 1757672530237
+INFO 2025-09-12 11:22:10,258 views 16032 19940 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,258 views 16032 19940 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,294 views 16032 19940 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,294 views 16032 19940 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:10,322 basehttp 16032 18804 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 11:22:10,322 basehttp 16032 18804 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 11:22:12,334 basehttp 16032 18804 "OPTIONS /api/scan/1757672530237/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:22:12,334 basehttp 16032 18804 "OPTIONS /api/scan/1757672530237/ HTTP/1.1" 200 0
+INFO 2025-09-12 11:22:12,341 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:12,341 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:12,344 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:12,344 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:12,365 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:12,365 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:14,358 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:14,358 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:14,362 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:14,362 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:14,412 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:14,412 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:16,343 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:16,343 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:16,348 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:16,348 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 10
+INFO 2025-09-12 11:22:16,383 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:16,383 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 253
+INFO 2025-09-12 11:22:17,337 views 16032 19940 Found open port 80 on 172.67.154.147
+INFO 2025-09-12 11:22:17,337 views 16032 19940 Found open port 80 on 172.67.154.147
+INFO 2025-09-12 11:22:17,352 views 16032 19940 Found open port 443 on 172.67.154.147
+INFO 2025-09-12 11:22:17,352 views 16032 19940 Found open port 443 on 172.67.154.147
+INFO 2025-09-12 11:22:17,364 views 16032 19940 Found open port 8080 on 172.67.154.147
+INFO 2025-09-12 11:22:17,364 views 16032 19940 Found open port 8080 on 172.67.154.147
+INFO 2025-09-12 11:22:17,378 views 16032 19940 Found open port 8443 on 172.67.154.147
+INFO 2025-09-12 11:22:17,378 views 16032 19940 Found open port 8443 on 172.67.154.147
+INFO 2025-09-12 11:22:17,401 views 16032 19940 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:17,401 views 16032 19940 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:18,344 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:18,344 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:18,347 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 30
+INFO 2025-09-12 11:22:18,347 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 30
+INFO 2025-09-12 11:22:18,363 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1331
+INFO 2025-09-12 11:22:18,363 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1331
+WARNING 2025-09-12 11:22:19,145 views 16032 19940 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+WARNING 2025-09-12 11:22:19,145 views 16032 19940 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:19,194 views 16032 19940 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:19,194 views 16032 19940 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:20,345 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:20,345 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:20,349 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 50
+INFO 2025-09-12 11:22:20,349 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 50
+INFO 2025-09-12 11:22:20,371 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1597
+INFO 2025-09-12 11:22:20,371 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1597
+INFO 2025-09-12 11:22:21,128 views 16032 19940 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:21,128 views 16032 19940 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 11:22:22,342 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:22,342 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:22,344 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 70
+INFO 2025-09-12 11:22:22,344 views 16032 18804 Found scan 1757672530237, status: scanning, progress: 70
+INFO 2025-09-12 11:22:22,369 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1597
+INFO 2025-09-12 11:22:22,369 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1597
+INFO 2025-09-12 11:22:22,949 views 16032 19940 Scan 1757672530237 completed successfully
+INFO 2025-09-12 11:22:22,949 views 16032 19940 Scan 1757672530237 completed successfully
+INFO 2025-09-12 11:22:24,344 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:24,344 views 16032 18804 Received GET request for scan ID: 1757672530237
+INFO 2025-09-12 11:22:24,349 views 16032 18804 Found scan 1757672530237, status: completed, progress: 100
+INFO 2025-09-12 11:22:24,349 views 16032 18804 Found scan 1757672530237, status: completed, progress: 100
+INFO 2025-09-12 11:22:24,393 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1599
+INFO 2025-09-12 11:22:24,393 basehttp 16032 18804 "GET /api/scan/1757672530237/ HTTP/1.1" 200 1599
+INFO 2025-09-12 16:36:58,945 basehttp 16032 11948 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:36:58,946 basehttp 16032 9220 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:36:58,945 basehttp 16032 11948 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:36:58,946 basehttp 16032 9220 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+WARNING 2025-09-12 16:36:58,956 log 16032 9220 Unauthorized: /api/user/profile/
+WARNING 2025-09-12 16:36:58,956 log 16032 9220 Unauthorized: /api/user/profile/
+WARNING 2025-09-12 16:36:58,959 basehttp 16032 9220 "GET /api/user/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-12 16:36:58,959 basehttp 16032 9220 "GET /api/user/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-12 16:36:58,967 log 16032 9220 Unauthorized: /api/user/profile/
+WARNING 2025-09-12 16:36:58,967 log 16032 9220 Unauthorized: /api/user/profile/
+WARNING 2025-09-12 16:36:58,971 basehttp 16032 9220 "GET /api/user/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-12 16:36:58,971 basehttp 16032 9220 "GET /api/user/profile/ HTTP/1.1" 401 172
+INFO 2025-09-12 16:36:58,988 basehttp 16032 9220 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:36:58,988 basehttp 16032 9220 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:36:59,033 basehttp 16032 9220 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-09-12 16:36:59,033 basehttp 16032 9220 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-09-12 16:36:59,042 basehttp 16032 11948 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-09-12 16:36:59,042 basehttp 16032 11948 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-09-12 16:36:59,069 basehttp 16032 11948 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 16:36:59,069 basehttp 16032 11948 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 16:36:59,091 basehttp 16032 11948 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 16:36:59,091 basehttp 16032 11948 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 16:37:29,888 basehttp 16032 11948 "OPTIONS /api/scan/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:37:29,888 basehttp 16032 11948 "OPTIONS /api/scan/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:37:29,901 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:37:29,901 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:37:29,904 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,904 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,926 views 16032 11948 Created scan with ID: 1757691449906
+INFO 2025-09-12 16:37:29,926 views 16032 11948 Created scan with ID: 1757691449906
+INFO 2025-09-12 16:37:29,929 views 16032 23152 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,929 views 16032 23152 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,983 views 16032 23152 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,983 views 16032 23152 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:29,999 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:37:29,999 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:37:32,015 basehttp 16032 11948 "OPTIONS /api/scan/1757691449906/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:37:32,015 basehttp 16032 11948 "OPTIONS /api/scan/1757691449906/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:37:32,031 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:32,031 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:32,040 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:32,040 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:32,095 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:32,095 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:34,027 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:34,027 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:34,033 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:34,033 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:34,093 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:34,093 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:36,036 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:36,036 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:36,045 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:36,045 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:36,125 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:36,125 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:38,015 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:38,015 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:38,018 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:38,018 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:38,037 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:38,037 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:40,023 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:40,023 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:40,028 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:40,028 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:40,074 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:40,074 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:42,023 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:42,023 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:42,028 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:42,028 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 10
+INFO 2025-09-12 16:37:42,079 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:42,079 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:37:42,084 views 16032 23152 Found open port 80 on 172.67.154.147
+INFO 2025-09-12 16:37:42,084 views 16032 23152 Found open port 80 on 172.67.154.147
+INFO 2025-09-12 16:37:42,116 views 16032 23152 Found open port 443 on 172.67.154.147
+INFO 2025-09-12 16:37:42,116 views 16032 23152 Found open port 443 on 172.67.154.147
+INFO 2025-09-12 16:37:42,145 views 16032 23152 Found open port 8080 on 172.67.154.147
+INFO 2025-09-12 16:37:42,145 views 16032 23152 Found open port 8080 on 172.67.154.147
+INFO 2025-09-12 16:37:42,171 views 16032 23152 Found open port 8443 on 172.67.154.147
+INFO 2025-09-12 16:37:42,171 views 16032 23152 Found open port 8443 on 172.67.154.147
+INFO 2025-09-12 16:37:42,232 views 16032 23152 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:42,232 views 16032 23152 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:44,025 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:44,025 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:44,030 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 30
+INFO 2025-09-12 16:37:44,030 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 30
+INFO 2025-09-12 16:37:44,084 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1331
+INFO 2025-09-12 16:37:44,084 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1331
+WARNING 2025-09-12 16:37:45,840 views 16032 23152 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+WARNING 2025-09-12 16:37:45,840 views 16032 23152 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:45,886 views 16032 23152 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:45,886 views 16032 23152 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:46,021 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:46,021 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:46,027 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 50
+INFO 2025-09-12 16:37:46,027 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 50
+INFO 2025-09-12 16:37:46,068 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:46,068 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:48,029 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:48,029 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:48,034 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 50
+INFO 2025-09-12 16:37:48,034 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 50
+INFO 2025-09-12 16:37:48,097 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:48,097 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:49,668 views 16032 23152 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:49,668 views 16032 23152 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:37:50,035 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:50,035 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:50,044 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:50,044 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:50,112 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:50,112 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:52,027 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:52,027 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:52,033 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:52,033 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:52,099 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:52,099 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:54,016 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:54,016 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:54,020 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:54,020 views 16032 11948 Found scan 1757691449906, status: scanning, progress: 70
+INFO 2025-09-12 16:37:54,050 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:54,050 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:37:54,257 views 16032 23152 Scan 1757691449906 completed successfully
+INFO 2025-09-12 16:37:54,257 views 16032 23152 Scan 1757691449906 completed successfully
+INFO 2025-09-12 16:37:56,030 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:56,030 views 16032 11948 Received GET request for scan ID: 1757691449906
+INFO 2025-09-12 16:37:56,035 views 16032 11948 Found scan 1757691449906, status: completed, progress: 100
+INFO 2025-09-12 16:37:56,035 views 16032 11948 Found scan 1757691449906, status: completed, progress: 100
+INFO 2025-09-12 16:37:56,096 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1599
+INFO 2025-09-12 16:37:56,096 basehttp 16032 11948 "GET /api/scan/1757691449906/ HTTP/1.1" 200 1599
+INFO 2025-09-12 16:38:48,072 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:38:48,072 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:38:48,074 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,074 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,085 views 16032 11948 Created scan with ID: 1757691528075
+INFO 2025-09-12 16:38:48,085 views 16032 11948 Created scan with ID: 1757691528075
+INFO 2025-09-12 16:38:48,086 views 16032 11856 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,086 views 16032 11856 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,109 views 16032 11856 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,109 views 16032 11856 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:48,127 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:38:48,127 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:38:50,152 basehttp 16032 11948 "OPTIONS /api/scan/1757691528075/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:38:50,152 basehttp 16032 11948 "OPTIONS /api/scan/1757691528075/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:38:50,165 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:50,165 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:50,171 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 10
+INFO 2025-09-12 16:38:50,171 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 10
+INFO 2025-09-12 16:38:50,209 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:50,209 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:52,153 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:52,153 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:52,156 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 10
+INFO 2025-09-12 16:38:52,156 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 10
+INFO 2025-09-12 16:38:52,169 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:52,169 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:52,543 views 16032 11856 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:52,543 views 16032 11856 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:38:54,154 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:54,154 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:54,159 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:54,159 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:54,193 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:54,193 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:56,150 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:56,150 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:56,154 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:56,154 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:56,199 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:56,199 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:58,154 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:58,154 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:38:58,159 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:58,159 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:38:58,202 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:38:58,202 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:00,150 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:00,150 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:00,152 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:00,152 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:00,166 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:00,166 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:02,151 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:02,151 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:02,153 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:02,153 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:02,175 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:02,175 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:04,153 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:04,153 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:04,157 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:04,157 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 30
+INFO 2025-09-12 16:39:04,193 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:39:04,193 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 253
+WARNING 2025-09-12 16:39:04,687 views 16032 11856 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+WARNING 2025-09-12 16:39:04,687 views 16032 11856 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:39:04,732 views 16032 11856 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:39:04,732 views 16032 11856 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:39:06,148 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:06,148 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:06,153 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 50
+INFO 2025-09-12 16:39:06,153 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 50
+INFO 2025-09-12 16:39:06,195 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 519
+INFO 2025-09-12 16:39:06,195 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 519
+INFO 2025-09-12 16:39:07,743 views 16032 11856 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:39:07,743 views 16032 11856 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:39:08,152 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:08,152 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:08,155 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 70
+INFO 2025-09-12 16:39:08,155 views 16032 11948 Found scan 1757691528075, status: scanning, progress: 70
+INFO 2025-09-12 16:39:08,176 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 519
+INFO 2025-09-12 16:39:08,176 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 519
+INFO 2025-09-12 16:39:09,372 views 16032 11856 Scan 1757691528075 completed successfully
+INFO 2025-09-12 16:39:09,372 views 16032 11856 Scan 1757691528075 completed successfully
+INFO 2025-09-12 16:39:10,151 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:10,151 views 16032 11948 Received GET request for scan ID: 1757691528075
+INFO 2025-09-12 16:39:10,156 views 16032 11948 Found scan 1757691528075, status: completed, progress: 100
+INFO 2025-09-12 16:39:10,156 views 16032 11948 Found scan 1757691528075, status: completed, progress: 100
+INFO 2025-09-12 16:39:10,191 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 521
+INFO 2025-09-12 16:39:10,191 basehttp 16032 11948 "GET /api/scan/1757691528075/ HTTP/1.1" 200 521
+WARNING 2025-09-12 16:39:26,918 log 16032 11948 Unauthorized: /api/auth/logout/
+WARNING 2025-09-12 16:39:26,918 log 16032 11948 Unauthorized: /api/auth/logout/
+WARNING 2025-09-12 16:39:26,922 basehttp 16032 11948 "POST /api/auth/logout/ HTTP/1.1" 401 58
+WARNING 2025-09-12 16:39:26,922 basehttp 16032 11948 "POST /api/auth/logout/ HTTP/1.1" 401 58
+INFO 2025-09-12 16:40:01,850 basehttp 16032 11948 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:40:01,850 basehttp 16032 11948 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:40:04,421 basehttp 16032 11948 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 16:40:04,421 basehttp 16032 11948 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 16:40:09,664 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:40:09,664 views 16032 11948 Received POST request to /api/scan/
+INFO 2025-09-12 16:40:09,665 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,665 views 16032 11948 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,680 views 16032 11948 Created scan with ID: 1757691609666
+INFO 2025-09-12 16:40:09,680 views 16032 11948 Created scan with ID: 1757691609666
+INFO 2025-09-12 16:40:09,682 views 16032 17812 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,682 views 16032 17812 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,717 views 16032 17812 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,717 views 16032 17812 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:09,739 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:40:09,739 basehttp 16032 11948 "POST /api/scan/ HTTP/1.1" 201 252
+INFO 2025-09-12 16:40:11,752 basehttp 16032 11948 "OPTIONS /api/scan/1757691609666/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:40:11,752 basehttp 16032 11948 "OPTIONS /api/scan/1757691609666/ HTTP/1.1" 200 0
+INFO 2025-09-12 16:40:11,767 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:11,767 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:11,774 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:11,774 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:11,823 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:11,823 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:13,766 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:13,766 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:13,771 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:13,771 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:13,817 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:13,817 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:15,758 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:15,758 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:15,761 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:15,761 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 10
+INFO 2025-09-12 16:40:15,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:15,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 253
+INFO 2025-09-12 16:40:16,712 views 16032 17812 Found open port 80 on 104.21.32.202
+INFO 2025-09-12 16:40:16,712 views 16032 17812 Found open port 80 on 104.21.32.202
+INFO 2025-09-12 16:40:16,742 views 16032 17812 Found open port 443 on 104.21.32.202
+INFO 2025-09-12 16:40:16,742 views 16032 17812 Found open port 443 on 104.21.32.202
+INFO 2025-09-12 16:40:16,778 views 16032 17812 Found open port 8080 on 104.21.32.202
+INFO 2025-09-12 16:40:16,778 views 16032 17812 Found open port 8080 on 104.21.32.202
+INFO 2025-09-12 16:40:16,810 views 16032 17812 Found open port 8443 on 104.21.32.202
+INFO 2025-09-12 16:40:16,810 views 16032 17812 Found open port 8443 on 104.21.32.202
+INFO 2025-09-12 16:40:16,870 views 16032 17812 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:16,870 views 16032 17812 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:17,756 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:17,756 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:17,760 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 30
+INFO 2025-09-12 16:40:17,760 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 30
+INFO 2025-09-12 16:40:17,785 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1331
+INFO 2025-09-12 16:40:17,785 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1331
+WARNING 2025-09-12 16:40:18,593 views 16032 17812 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+WARNING 2025-09-12 16:40:18,593 views 16032 17812 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:18,650 views 16032 17812 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:18,650 views 16032 17812 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:19,762 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:19,762 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:19,765 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 50
+INFO 2025-09-12 16:40:19,765 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 50
+INFO 2025-09-12 16:40:19,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:40:19,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:40:21,019 views 16032 17812 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:21,019 views 16032 17812 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 16:40:21,765 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:21,765 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:21,768 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 70
+INFO 2025-09-12 16:40:21,768 views 16032 11948 Found scan 1757691609666, status: scanning, progress: 70
+INFO 2025-09-12 16:40:21,789 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:40:21,789 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1597
+INFO 2025-09-12 16:40:23,129 views 16032 17812 Scan 1757691609666 completed successfully
+INFO 2025-09-12 16:40:23,129 views 16032 17812 Scan 1757691609666 completed successfully
+INFO 2025-09-12 16:40:23,763 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:23,763 views 16032 11948 Received GET request for scan ID: 1757691609666
+INFO 2025-09-12 16:40:23,765 views 16032 11948 Found scan 1757691609666, status: completed, progress: 100
+INFO 2025-09-12 16:40:23,765 views 16032 11948 Found scan 1757691609666, status: completed, progress: 100
+INFO 2025-09-12 16:40:23,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1599
+INFO 2025-09-12 16:40:23,782 basehttp 16032 11948 "GET /api/scan/1757691609666/ HTTP/1.1" 200 1599
+INFO 2025-09-12 17:38:08,068 basehttp 16032 24192 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 17:38:08,068 basehttp 16032 24192 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 17:38:08,394 basehttp 16032 24192 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 17:38:08,394 basehttp 16032 24192 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 18:19:57,413 autoreload 24628 4056 Watching for file changes with StatReloader
+INFO 2025-09-12 18:19:57,413 autoreload 24628 4056 Watching for file changes with StatReloader
+WARNING 2025-09-12 18:20:14,522 log 24628 25680 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 18:20:14,522 log 24628 25680 Unauthorized: /api/auth/login/
+WARNING 2025-09-12 18:20:14,523 basehttp 24628 25680 "POST /api/auth/login/ HTTP/1.1" 401 37
+WARNING 2025-09-12 18:20:14,523 basehttp 24628 25680 "POST /api/auth/login/ HTTP/1.1" 401 37
+INFO 2025-09-12 18:20:58,349 basehttp 24628 25680 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-09-12 18:20:58,349 basehttp 24628 25680 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-09-12 18:21:00,781 basehttp 24628 25680 "POST /api/auth/register/ HTTP/1.1" 201 98
+INFO 2025-09-12 18:21:00,781 basehttp 24628 25680 "POST /api/auth/register/ HTTP/1.1" 201 98
+INFO 2025-09-12 18:21:14,091 basehttp 24628 25680 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 18:21:14,091 basehttp 24628 25680 "POST /api/auth/login/ HTTP/1.1" 200 548
+INFO 2025-09-12 18:21:24,311 views 24628 25680 Received POST request to /api/scan/
+INFO 2025-09-12 18:21:24,311 views 24628 25680 Received POST request to /api/scan/
+INFO 2025-09-12 18:21:24,313 views 24628 25680 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,313 views 24628 25680 URL: https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,336 views 24628 25680 Created scan with ID: 1757697684314
+INFO 2025-09-12 18:21:24,336 views 24628 25680 Created scan with ID: 1757697684314
+INFO 2025-09-12 18:21:24,339 views 24628 19512 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,339 views 24628 19512 Starting background scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,377 views 24628 19512 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,377 views 24628 19512 Starting nmap scan for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:24,418 basehttp 24628 25680 "POST /api/scan/ HTTP/1.1" 201 253
+INFO 2025-09-12 18:21:24,418 basehttp 24628 25680 "POST /api/scan/ HTTP/1.1" 201 253
+INFO 2025-09-12 18:21:26,443 basehttp 24628 25680 "OPTIONS /api/scan/1757697684314/ HTTP/1.1" 200 0
+INFO 2025-09-12 18:21:26,443 basehttp 24628 25680 "OPTIONS /api/scan/1757697684314/ HTTP/1.1" 200 0
+INFO 2025-09-12 18:21:26,452 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:26,452 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:26,457 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:26,457 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:26,491 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:26,491 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:28,456 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:28,456 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:28,461 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:28,461 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:28,499 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:28,499 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:30,446 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:30,446 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:30,451 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:30,451 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 10
+INFO 2025-09-12 18:21:30,491 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:30,491 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 253
+INFO 2025-09-12 18:21:31,402 views 24628 19512 Found open port 80 on 104.21.32.202
+INFO 2025-09-12 18:21:31,402 views 24628 19512 Found open port 80 on 104.21.32.202
+INFO 2025-09-12 18:21:31,423 views 24628 19512 Found open port 443 on 104.21.32.202
+INFO 2025-09-12 18:21:31,423 views 24628 19512 Found open port 443 on 104.21.32.202
+INFO 2025-09-12 18:21:31,444 views 24628 19512 Found open port 8080 on 104.21.32.202
+INFO 2025-09-12 18:21:31,444 views 24628 19512 Found open port 8080 on 104.21.32.202
+INFO 2025-09-12 18:21:31,466 views 24628 19512 Found open port 8443 on 104.21.32.202
+INFO 2025-09-12 18:21:31,466 views 24628 19512 Found open port 8443 on 104.21.32.202
+INFO 2025-09-12 18:21:31,505 views 24628 19512 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:31,505 views 24628 19512 Starting website analysis for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:32,444 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:32,444 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:32,447 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 30
+INFO 2025-09-12 18:21:32,447 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 30
+INFO 2025-09-12 18:21:32,472 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1331
+INFO 2025-09-12 18:21:32,472 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1331
+WARNING 2025-09-12 18:21:33,517 views 24628 19512 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+WARNING 2025-09-12 18:21:33,517 views 24628 19512 Website analysis failed for https://www.dvwa.co.uk/: 520 Server Error: <none> for url: https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:33,568 views 24628 19512 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:33,568 views 24628 19512 Starting SQL injection testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:34,444 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:34,444 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:34,447 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 50
+INFO 2025-09-12 18:21:34,447 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 50
+INFO 2025-09-12 18:21:34,464 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1597
+INFO 2025-09-12 18:21:34,464 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1597
+INFO 2025-09-12 18:21:35,734 views 24628 19512 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:35,734 views 24628 19512 Starting XSS testing for https://www.dvwa.co.uk/
+INFO 2025-09-12 18:21:36,440 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:36,440 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:36,443 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 70
+INFO 2025-09-12 18:21:36,443 views 24628 25680 Found scan 1757697684314, status: scanning, progress: 70
+INFO 2025-09-12 18:21:36,467 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1597
+INFO 2025-09-12 18:21:36,467 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1597
+INFO 2025-09-12 18:21:37,527 views 24628 19512 Scan 1757697684314 completed successfully
+INFO 2025-09-12 18:21:37,527 views 24628 19512 Scan 1757697684314 completed successfully
+INFO 2025-09-12 18:21:38,436 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:38,436 views 24628 25680 Received GET request for scan ID: 1757697684314
+INFO 2025-09-12 18:21:38,438 views 24628 25680 Found scan 1757697684314, status: completed, progress: 100
+INFO 2025-09-12 18:21:38,438 views 24628 25680 Found scan 1757697684314, status: completed, progress: 100
+INFO 2025-09-12 18:21:38,463 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1599
+INFO 2025-09-12 18:21:38,463 basehttp 24628 25680 "GET /api/scan/1757697684314/ HTTP/1.1" 200 1599
+INFO 2025-09-12 18:24:43,681 basehttp 24628 25680 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 18:24:43,681 basehttp 24628 25680 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 18:24:43,695 basehttp 24628 25680 "GET /api/user/profile/ HTTP/1.1" 200 51
+INFO 2025-09-12 18:24:43,695 basehttp 24628 25680 "GET /api/user/profile/ HTTP/1.1" 200 51
+WARNING 2025-09-12 18:24:50,907 log 24628 25680 Unauthorized: /api/auth/logout/
+WARNING 2025-09-12 18:24:50,907 log 24628 25680 Unauthorized: /api/auth/logout/
+WARNING 2025-09-12 18:24:50,915 basehttp 24628 25680 "POST /api/auth/logout/ HTTP/1.1" 401 58
+WARNING 2025-09-12 18:24:50,915 basehttp 24628 25680 "POST /api/auth/logout/ HTTP/1.1" 401 58

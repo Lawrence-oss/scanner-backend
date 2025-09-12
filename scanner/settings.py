@@ -60,7 +60,17 @@ SIMPLE_JWT = {
    'BLACKLIST_AFTER_ROTATION': True,
    'ALGORITHM': 'HS256',
    'SIGNING_KEY': SECRET_KEY,
+    'VERIFYING_KEY': None,
+    'AUDIENCE': None,
+    'ISSUER': None,
+    'AUTH_HEADER_TYPES': ('Bearer',),
+    'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
+    'USER_ID_FIELD': 'id',
+    'USER_ID_CLAIM': 'user_id',
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'TOKEN_TYPE_CLAIM': 'token_type',
 }
+
 
 DATABASES = {
     'default': {
@@ -81,6 +91,17 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+        'TIMEOUT': 300,  # 5 minutes default
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000,
+        }
+    }
+}
 
 ROOT_URLCONF = 'scanner.urls'
 
@@ -134,24 +155,67 @@ AUTH_PASSWORD_VALIDATORS = [
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
         },
     },
-   'root': {
-        'handlers': ['console'],
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'scanner.log',
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'root': {
+        'handlers': ['console', 'file'],
         'level': 'INFO',
     },
     'loggers': {
-        'api.views': {
-            'handlers': ['console'],
+        'django': {
+            'handlers': ['file'],
             'level': 'INFO',
-            'propagate': False,
+            'propagate': True,
+        },
+        'api': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
         },
     },
 }
 
+# Security settings
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
+
+# Rate limiting settings
+RATE_LIMIT_ENABLE = True
+SCAN_RATE_LIMIT_PER_HOUR = {
+    'authenticated': 20,    # Higher limit for authenticated users
+    'anonymous': 5,         # Lower limit for anonymous users
+}
+
+# Scan timeout settings (in seconds)
+SCAN_TIMEOUTS = {
+    'port_scan': 60,        # nmap timeout
+    'web_request': 15,      # HTTP request timeout  
+    'sql_injection_test': 30, # SQL injection test timeout
+    'xss_test': 30,         # XSS test timeout
+    'total_scan': 600,      # 10 minutes max total scan time
+}
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
