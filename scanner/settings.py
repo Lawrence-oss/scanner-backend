@@ -9,16 +9,13 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
 from pathlib import Path
 from datetime import timedelta
+import os
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-xz=-n*qc&#%m3x_1z@2ne5nyp3l%01@a#-(au(%3a2d)oqa5jz'
@@ -28,9 +25,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,14 +66,6 @@ SIMPLE_JWT = {
     'TOKEN_TYPE_CLAIM': 'token_type',
 }
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'scanner.db',
-    }
-}
-
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -96,7 +83,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'LOCATION': 'unique-snowflake',
-        'TIMEOUT': 300,  # 5 minutes default
+        'TIMEOUT': 300,
         'OPTIONS': {
             'MAX_ENTRIES': 1000,
         }
@@ -122,10 +109,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'scanner.wsgi.application'
 
-
 # Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -133,10 +117,7 @@ DATABASES = {
     }
 }
 
-
 # Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -204,36 +185,74 @@ X_FRAME_OPTIONS = 'DENY'
 # Rate limiting settings
 RATE_LIMIT_ENABLE = True
 SCAN_RATE_LIMIT_PER_HOUR = {
-    'authenticated': 20,    # Higher limit for authenticated users
-    'anonymous': 5,         # Lower limit for anonymous users
+    'authenticated': 20,
+    'anonymous': 5,
 }
 
-# Scan timeout settings (in seconds)
+# Enhanced scan timeout settings (in seconds)
 SCAN_TIMEOUTS = {
-    'port_scan': 60,        # nmap timeout
-    'web_request': 15,      # HTTP request timeout  
-    'sql_injection_test': 30, # SQL injection test timeout
-    'xss_test': 30,         # XSS test timeout
-    'total_scan': 600,      # 10 minutes max total scan time
+    'port_scan': 60,
+    'web_request': 15,
+    'sql_injection_test': 30,
+    'xss_test': 30,
+    'sqlmap_test': 120,          # SQLMap can take longer
+    'total_scan': 900,           # 15 minutes max total scan time (increased)
 }
+
+# SQLMap Configuration
+SQLMAP_LOCAL_PATH = os.path.join(BASE_DIR, 'sqlmap', 'sqlmap.py')
+
+SQLMAP_CONFIG = {
+    'enabled': True,
+    'path': f'{sys.executable} {SQLMAP_LOCAL_PATH}' if os.path.exists(SQLMAP_LOCAL_PATH) else 'sqlmap',
+    'timeout': 120,
+    'max_forms_per_scan': 3,
+    'default_options': {
+        'batch': True,
+        'smart': True,
+        'level': 1,
+        'risk': 1,
+        'threads': 2,
+        'timeout': 30,
+        'retries': 1,
+        'technique': 'BEUST',
+        'dbms': 'MySQL,PostgreSQL,SQLite,Oracle,MSSQL',
+    },
+    'output_dir': os.path.join(BASE_DIR, 'temp', 'sqlmap_output'),
+}
+
+# Create temp directories
+os.makedirs(os.path.join(BASE_DIR, 'temp'), exist_ok=True)
+os.makedirs(SQLMAP_CONFIG['output_dir'], exist_ok=True)
+
+# Security scanning settings
+SECURITY_SCAN_CONFIG = {
+    'max_concurrent_scans': 5,
+    'enable_advanced_sql_testing': True,
+    'enable_comprehensive_port_scan': True,
+    'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    'request_headers': {
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Accept-Encoding': 'gzip, deflate',
+        'Connection': 'keep-alive',
+        'Cache-Control': 'max-age=0',
+    }
+}
+
+# Create temp directory for sqlmap if it doesn't exist
+TEMP_DIR = os.path.join(BASE_DIR, 'temp')
+os.makedirs(TEMP_DIR, exist_ok=True)
+os.makedirs(SQLMAP_CONFIG['output_dir'], exist_ok=True)
+
 # Internationalization
-# https://docs.djangoproject.com/en/5.2/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
-
 STATIC_URL = 'static/'
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
