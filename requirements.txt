@@ -1,0 +1,21 @@
+# Django and REST Framework
+Django==5.2.5
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+django-cors-headers==4.7.0
+
+# Database
+psycopg2-binary==2.9.10
+dj-database-url==2.1.0
+
+# Web scraping and scanning
+beautifulsoup4==4.13.5
+python-nmap==0.7.1
+requests==2.32.5
+
+# Production server
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# Utilities
+python-decouple==3.8
