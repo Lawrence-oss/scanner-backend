@@ -89,7 +89,7 @@ MIDDLEWARE = [
 # CORS: Allow origins from environment variable, with localhost defaults for development
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:5173,http://localhost:5174',
+    default='http://localhost:5173,http://localhost:5174,https://lawsscanner.vercel.app',
     cast=Csv()
 )
 
