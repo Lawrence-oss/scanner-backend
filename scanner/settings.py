@@ -89,7 +89,7 @@ MIDDLEWARE = [
 # CORS: Allow origins from environment variable, with localhost defaults for development
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:5173,http://localhost:5174,https://lawsscanner.vercel.app',
+    default='http://localhost:5173,http://localhost:5174,https://laws-scan.vercel.app',
     cast=Csv()
 )
 
@@ -138,16 +138,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'scanner.wsgi.application'
 
 # Database
-# Use DATABASE_URL in production (Render sets this automatically)
-# Falls back to local PostgreSQL for development
+# Use DATABASE_URL in production, with SQLite as fallback for local development
 DATABASES = {
     'default': dj_database_url.config(
-        default=config(
-            'DATABASE_URL',
-            default='postgresql://scanner_user:Lawful-009@localhost:5432/scanner_db'
-        ),
-        conn_max_age=600,
-        conn_health_checks=True,
+        default='sqlite:///db.sqlite3',
+        conn_max_age=600
     )
 }
 
