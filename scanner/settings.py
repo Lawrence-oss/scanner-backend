@@ -93,8 +93,19 @@ CORS_ALLOWED_ORIGINS = config(
     cast=Csv()
 )
 
+# Allow Vercel preview deployments (e.g. https://<project>-<hash>.vercel.app)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+]
+
 # Allow credentials for authenticated requests
 CORS_ALLOW_CREDENTIALS = True
+
+# Trust the same origins for CSRF-protected endpoints (safe even if unused)
+CSRF_TRUSTED_ORIGINS = [
+    "https://lawsscanner.vercel.app",
+    "https://*.vercel.app",
+]
 
 CACHES = {
     'default': {
